@@ -20,16 +20,16 @@ sudo apt-get install -y \
 
 cd /tmp
 
-wget -q https://www.python.org/ftp/python/3.10.4/Python-3.10.4.tgz
+wget -q https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tgz
 
-tar -xf Python-3.10.4.tgz
+tar -xf Python-3.10.5.tgz
 
-echo "Building Python 3.10.4..."
-cd Python-3.10.4
+echo "Building Python 3.10.5..."
+cd Python-3.10.5
 ./configure --enable-optimizations --with-ensurepip=install --with-system-ffi
 make -j $(nproc)
 
-echo "Installing Python 3.10.4..."
+echo "Installing Python 3.10.5..."
 sudo make altinstall
 
 echo "All done!"
